@@ -1,5 +1,8 @@
 README.md
 HELP.md
+*/.exercism/**
 *.csproj
-bin/*
-obj/*
+*Tests.cs
+.editorconfig
+*/bin/**
+*/obj/**
