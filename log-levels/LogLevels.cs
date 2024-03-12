@@ -4,15 +4,12 @@ static class LogLine
 {
     public static string Message(string logLine)
     {
-        string messageLine = logLine.Substring(logLine.IndexOf(" ") + 1);
-        return messageLine.Trim();
+        return logLine.Substring(logLine.IndexOf(" ") + 1).Trim();
     }
 
     public static string LogLevel(string logLine)
     {
-        string capitalLogLevel = logLine.Substring(logLine.IndexOf("[") + 1, logLine.IndexOf("]") - 1);
-        string cleanLogLevel = capitalLogLevel.Trim();
-        return cleanLogLevel.ToLower();
+        return logLine.Substring(logLine.IndexOf("[") + 1, logLine.IndexOf("]") - 1).Trim().ToLower();
     }
 
     public static string Reformat(string logLine)
